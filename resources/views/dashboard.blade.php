@@ -8,7 +8,7 @@
 
     <article>
         <a href="{{ route('employee.index') }}">
-            <x-button>
+            <x-button class="h-40 font-bold w-full flex justify-center mx-auto sm:w-1/2">
                 {{ __('Employee management') }}
             </x-button>
         </a>

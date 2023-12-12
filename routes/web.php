@@ -26,5 +26,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/funcionarios/listagem', \App\Http\Livewire\Employee\EmployeeIndex::class)->name('employee.index');
+    Route::get('/funcionarios', \App\Http\Livewire\Employee\EmployeeIndex::class)->name('employee.index');
+    Route::get('/funicionarios/criar', \App\Http\Livewire\Employee\EmployeeCreate::class)->name('employee.create');
+    Route::get('/funicionarios/{id}', \App\Http\Livewire\Employee\EmployeeShow::class)->name('employee.show');
+    Route::get('/funicionario/{id}/atualizar', \App\Http\Livewire\Employee\EmployeeEdit::class)->name('employee.edit');
 });

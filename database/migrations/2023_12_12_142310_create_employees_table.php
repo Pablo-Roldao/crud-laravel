@@ -16,6 +16,12 @@ return new class extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->string('name');
+            $table->string('cpf', 14)->unique();
+            $table->bigInteger('birth_date');
+            $table->string('phone', 19);
+            $table->string('email');
         });
     }
 

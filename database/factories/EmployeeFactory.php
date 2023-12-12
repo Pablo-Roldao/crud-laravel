@@ -17,7 +17,11 @@ class EmployeeFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name(),
+            'cpf' => $this->faker->numerify('###.###.###-##'),
+            'birth_date' => $this->faker->numberBetween(0, now()->getTimestamp()),
+            'phone' => $this->faker->numerify('+## (##) #####-####'),
+            'email' => $this->faker->email()
         ];
     }
 }
