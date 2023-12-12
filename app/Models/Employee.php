@@ -22,4 +22,24 @@ class Employee extends Model
         return $this->id;
     }
 
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getCpf(): string
+    {
+        return $this->cpf;
+    }
+
+    public function  getEmail(): string
+    {
+        return $this->email;
+    }
+
+    public function getPhone(): string
+    {
+        return $this->phone;
+    }
+
 }
