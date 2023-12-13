@@ -145,5 +145,6 @@
     "Other": "Outro",
     "employee": "funcionário(a)",
     "Invalid birth date": "Data de nascimento inválida",
-    "Edit": "Atualizar"
+    "Edit": "Atualizar",
+    "Are you sure you want do delete this employee?": "Você tem certeza que deseja deletar esse(a) funcionário(a)?"
 }

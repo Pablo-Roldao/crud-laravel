@@ -45,14 +45,15 @@
 
                 {{--Gender--}}
                 <div>
+                    @php($genders = (new ReflectionClass(\App\Enum\GendersEnum::class))->getConstants())
                     <x-label for="employee.gender" value="{{ __('Gender') }}"/>
                     <select label="{{ __('Gender') }}"
                             wire:model="employee.gender" name="employee.gender" id="employee.gender"
-                            class="w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">
+                            class="{{ $employee->gender ? 'dark:text-white' : 'dark:text-gray-500' }} border-gray-300 dark:border-gray-700 dark:bg-gray-900 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm w-full">
                         <option label="{{ __('Gender') }}" value=""></option>
-                        <option label="{{ __('Male') }}" value="male"></option>
-                        <option label="{{ __('Female') }}" value="female"></option>
-                        <option label="{{ __('Other') }}" value="other"></option>
+                        @foreach($genders as $gender)
+                            <option label="{{ __(ucfirst($gender)) }}" value="{{ $gender }}"></option>
+                        @endforeach
                     </select>
                     <x-input-error for="employee.gender"/>
                 </div>

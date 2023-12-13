@@ -5,7 +5,7 @@
         </h1>
     </x-slot>
 
-    <div class="bg-white p-6 rounded-lg grid gap-4">
+    <div class="bg-white p-6 rounded-lg grid gap-4 dark:bg-gray-800">
         {{--Employee information--}}
         <article class="grid gap-2">
             <div>
@@ -39,7 +39,9 @@
             </div>
         </article>
 
-        <div class="sm:flex sm:justify-end">
+        <div class="sm:flex sm:justify-end gap-2 grid">
+            <livewire:employee.employee-destroy :employee="$employee" />
+
             <livewire:employee.employee-edit :employee="$employee" />
         </div>
     </div>
