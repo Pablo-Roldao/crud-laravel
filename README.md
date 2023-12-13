@@ -41,6 +41,13 @@ http://crudlaravel.tecnologia.ws/
 ![WhatsApp Image 2023-12-13 at 11 02 51](https://github.com/Pablo-Roldao/crud-laravel/assets/69702891/5d5693cb-34ab-4e92-b892-9c46d66dae31)
 ![WhatsApp Image 2023-12-13 at 11 03 14](https://github.com/Pablo-Roldao/crud-laravel/assets/69702891/2ac0c038-23cf-4ce2-8343-142a084680e7)
 
+## Responsividade
+![image](https://github.com/Pablo-Roldao/crud-laravel/assets/69702891/6d696fa4-725f-4334-baf5-c26718855de7)
+![image](https://github.com/Pablo-Roldao/crud-laravel/assets/69702891/85e7199b-3a60-436f-84a6-fcd6a094f16b)
+![image](https://github.com/Pablo-Roldao/crud-laravel/assets/69702891/2d565f65-3bc4-4e69-9ff3-e02a94512ab8)
+
+
+
 
 ## Licença
 Este projeto não possui uma licença especificada.
