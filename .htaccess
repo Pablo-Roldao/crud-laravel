@@ -1,0 +1,9 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php80-script .php
+suPHP_ConfigPath /home/crudlaraveltecno1/
+##### LOCAWEB - NAO REMOVER #####
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

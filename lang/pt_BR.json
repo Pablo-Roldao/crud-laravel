@@ -146,5 +146,6 @@
     "employee": "funcionário(a)",
     "Invalid birth date": "Data de nascimento inválida",
     "Edit": "Atualizar",
-    "Are you sure you want do delete this employee?": "Você tem certeza que deseja deletar esse(a) funcionário(a)?"
+    "Are you sure you want do delete this employee?": "Você tem certeza que deseja deletar esse(a) funcionário(a)?",
+    "No employees": "Nenhum(a) funcionário(a) encontrado(a)"
 }
