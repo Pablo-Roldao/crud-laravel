@@ -5,14 +5,17 @@ namespace App\Http\Livewire\Employee;
 use App\Repositories\EloquentEmployeesRepository;
 use App\Repositories\EmployeesRepository;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class EmployeeIndex extends Component
 {
 
+    use WithPagination;
+
     public int $perPage = 10;
     public string $search = '';
     public string $orderBy = 'name';
-    public bool $orderAsc = true;
+    public int $orderAsc = 1;
 
     private EmployeesRepository $employeesRepository;
 

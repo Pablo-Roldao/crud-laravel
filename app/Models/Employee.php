@@ -14,7 +14,8 @@ class Employee extends Model
         'cpf',
         'birth_date',
         'phone',
-        'email'
+        'email',
+        'gender'
     ];
 
     public function getId(): int
@@ -40,6 +41,16 @@ class Employee extends Model
     public function getPhone(): string
     {
         return $this->phone;
+    }
+
+    public function getBirthDate(): int
+    {
+        return $this->birth_date;
+    }
+
+    public function getGender(): string
+    {
+        return $this->gender;
     }
 
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Enum\GendersEnum;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,7 +14,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('employees', function (Blueprint $table) {
+
+        $genders = (new \ReflectionClass(GendersEnum::class))->getConstants();
+
+        Schema::create('employees', function (Blueprint $table) use ($genders) {
             $table->id();
             $table->timestamps();
 
@@ -22,6 +26,7 @@ return new class extends Migration
             $table->bigInteger('birth_date');
             $table->string('phone', 19);
             $table->string('email');
+            $table->enum('gender', $genders);
         });
     }
 

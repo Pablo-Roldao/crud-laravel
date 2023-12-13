@@ -131,11 +131,18 @@
     "of": "de",
     "results": "resultados",
     "to": "até",
-    "Employee management": "Gerenciamento de funcionários",
+    "Employee management": "Gerenciamento de funcionários(as)",
     "Last active": "Ativo",
     "Please enter your password to confirm you would like to log out of your other browser sessions across all of your devices.": "Por favor, insira sua senha para confirmar que você quer sair de todas as sessões em outros navegadores e dispositivos.",
     "Ascending": "Crescente",
     "Descending": "Decrescente",
     "Search": "Pesquisar",
-    "Phone": "Telefone"
+    "Phone": "Telefone",
+    "Gender": "Gênero",
+    "Birth date": "Data de nascimento",
+    "Male": "Masculino",
+    "Female": "Feminino",
+    "Other": "Outro",
+    "employee": "funcionário(a)",
+    "Invalid birth date": "Data de nascimento inválida"
 }

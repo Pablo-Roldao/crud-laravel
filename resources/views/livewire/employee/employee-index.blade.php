@@ -1,8 +1,8 @@
 <section>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Employee management') }}
-        </h2>
+        </h1>
     </x-slot>
 
     <article class="gap-4 pb-4 grid grid-cols-1 md:grid-cols-6">
@@ -30,9 +30,11 @@
             <option value="20">{{ 20 }}</option>
             <option value="50">{{ 50 }}</option>
         </select>
+
+        <livewire:employee.employee-create />
     </article>
 
-    <table class="rounded-lg dark:bg-indigo-400 dark:text-white w-full bg-indigo-400">
+    <table class="rounded-lg dark:bg-indigo-500 text-white w-full bg-indigo-900">
         <thead>
         <tr class="align-middle">
             <th scope="col" class="p-3">{{ __('Name') }}</th>
