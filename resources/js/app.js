@@ -2,10 +2,11 @@ import './bootstrap';
 
 import Alpine from 'alpinejs';
 import focus from '@alpinejs/focus';
-window.Alpine = Alpine;
-
 Alpine.plugin(focus);
+import mask from '@alpinejs/mask';
+Alpine.plugin(mask);
 
+window.Alpine = Alpine;
 Alpine.start();
 
 import Swal from 'sweetalert2';

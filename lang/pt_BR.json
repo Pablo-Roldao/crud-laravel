@@ -144,5 +144,6 @@
     "Female": "Feminino",
     "Other": "Outro",
     "employee": "funcionário(a)",
-    "Invalid birth date": "Data de nascimento inválida"
+    "Invalid birth date": "Data de nascimento inválida",
+    "Edit": "Atualizar"
 }

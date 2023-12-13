@@ -13,7 +13,7 @@
 
         {{-- Content --}}
         <x-slot name='content'>
-            <form wire:submit.prevent="store" id="storeForm" class="grid gap-2 pb-2">
+            <form wire:submit.prevent="store" id="storeForm" class="grid gap-2 pb-2" x-data>
 
                 {{--Name--}}
                 <div>
@@ -48,7 +48,7 @@
                     <x-label for="employee.gender" value="{{ __('Gender') }}"/>
                     <select label="{{ __('Gender') }}"
                             wire:model="employee.gender" name="employee.gender" id="employee.gender"
-                            class="w-full border-gray-300 focus:border-orange-500 focus:ring-orange-500 rounded-md shadow-sm">
+                            class="w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">
                         <option label="{{ __('Gender') }}" value=""></option>
                         <option label="{{ __('Male') }}" value="male"></option>
                         <option label="{{ __('Female') }}" value="female"></option>
@@ -64,7 +64,7 @@
                         type="text" placeholder="{{__('Phone')}}"
                         wire:model="employee.phone" name="employee.phone"
                         class="w-full" id="employee.phone"
-                        x-mask="(99) 99999-9999"
+                        x-mask="+99 (99) 99999-9999"
                     />
                     <x-input-error for="employee.phone"/>
                 </div>
