@@ -17,6 +17,8 @@ Este projeto consiste em um sistema CRUD (Create, Read, Update, Delete) para o g
 
 ## Demonstração
 
+http://crudlaravel.tecnologia.ws/
+
 ### Tema light
 
 ![WhatsApp Image 2023-12-13 at 11 03 54](https://github.com/Pablo-Roldao/crud-laravel/assets/69702891/2beac845-e699-4980-9c8d-20f079941611)
