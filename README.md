@@ -2,7 +2,7 @@
 # Sistema de Gerenciamento de Funcionários
 Este projeto consiste em um sistema CRUD (Create, Read, Update, Delete) para o gerenciamento de funcionários. Ele oferece funcionalidades de autenticação para garantir o acesso seguro ao sistema, autenticação de dois fatores para uma camada adicional de segurança e gerenciamento de perfil para personalização das informações dos funcionários. O projeto também conta com alternação entre tema dark ou light a depender do tema escolhido no navegador do usuário.
 
-## Tecnologias Utilizadas
+## Tecnologias/bibliotecas utilizadas
 - Laravel
 - Livewire
 - Sweetalert2
